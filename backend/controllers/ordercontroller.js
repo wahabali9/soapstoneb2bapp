@@ -23,6 +23,22 @@ export const createorder = async (req, res) => {
     }
 }
 
+export const getorder = async (req, res) => {
+    try {
+        const orders = await ordermodel.find().sort({createdAt: -1})
+        return res.status(200).json({
+            success: true,
+            orders
+        })
+       
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "error fetching orders",
+            message: error.message
+        })
+    }
+}
 
 export const trackorder = async (req, res) => {
     try {

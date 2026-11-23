@@ -1,4 +1,5 @@
-import productmodel from "../models/productmodel.js"
+import {productmodel} from "../models/productmodel.js"
+import cloudinary from "../config/cloudinary.js"
 
 // get all products (for frontend)
 const getproducts = async (req, res) => {
@@ -14,11 +15,18 @@ const getproducts = async (req, res) => {
 
 const addproduct = async (req, res) => {
     try {
-        const { title, description, imageurl, purityorbrightness, category } = req.body;
+        const { title, description,  purityorbrightness, category } = req.body;
+        if(!req.file){
+            return res.status(400).json({success: false, message: "please upload a product image"})
+        }
+
+        // buffer to base64 string
+        const filebase64 = `data:${req.file.mimetype};base64,${req.file.buffer.toString("base64")}`
+        const uploadresponse = await cloudinary.uploader.upload(filebase64, {folder: "products"})
         const newproduct = new productmodel({
             title,
             description,
-            imageurl,
+            imageurl: uploadresponse.secure_url,
             purityorbrightness,
             category
         })
