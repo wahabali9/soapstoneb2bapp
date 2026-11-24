@@ -51,7 +51,7 @@ export default function RFQForm() {
   return (
     <section id="contact-segment" className="bg-slate-950 border-t border-slate-900 py-12 md:py-16 px-4">
       <div className="container mx-auto max-w-2xl space-y-10">
-        
+
         {/* 📋 1. RFQ Form Box */}
         <div id="inquiry" className="bg-slate-900 border border-slate-800 p-5 sm:p-8 rounded-2xl shadow-xl text-xs text-slate-200">
           <div className="text-center mb-6">
@@ -59,7 +59,7 @@ export default function RFQForm() {
               B2B Inquiry Portal
             </span>
             <h3 className="text-lg sm:text-xl font-black text-slate-100">Request a Custom Quote</h3>
-            
+
             <p className="text-slate-400 text-[11px] sm:text-xs leading-relaxed mt-2 max-w-lg mx-auto">
               Please submit your initial requirements using this form to connect directly with our export team for detailed discussions on mineral specs, lab reports, and FOB pricing.
             </p>
@@ -114,35 +114,61 @@ export default function RFQForm() {
 
         {/* 🔀 Section Divider Border */}
         <div className="border-t border-slate-800/80 pt-2" />
-
         {/* 📞 2. Direct Contact Channels & Procurement Heading */}
         <div id="contact-cards" className="space-y-4">
           <div className="text-center">
             <h4 className="text-xs uppercase font-black tracking-widest text-teal-400">
               Connect with Procurement & Sales Desk
             </h4>
-            <p className="text-[11px] text-slate-400 mt-1">
-            <span className="text-slate-200 font-black">Wahab Ali (Managing Director)</span>
+            <p className="text-[13px] text-slate-400 mt-1">
+              <span className="text-slate-300 font-black">Wahab Ali (Managing Director)</span>
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-xs">
-            <a href="https://wa.me/923259344808" target="_blank" rel="noopener noreferrer" className="bg-slate-900/90 border border-emerald-900/60 p-4 rounded-2xl flex flex-col items-center justify-center gap-1 shadow-md hover:bg-slate-900 transition">
+            <a
+              href="https://wa.me/923259344808"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-900/90 border border-emerald-900/60 p-4 rounded-2xl flex flex-col items-center justify-center gap-1 shadow-md hover:bg-slate-900 transition"
+            >
               <span className="text-xl">💬</span>
               <span className="font-bold text-emerald-400">WhatsApp Support</span>
               <span className="text-[12px] text-slate-400">+92 3259344808</span>
             </a>
 
-            <a href="mailto:infofrontierstone@gmail.com" className="bg-slate-900/90 border border-teal-900/60 p-4 rounded-2xl flex flex-col items-center justify-center gap-1 shadow-md hover:bg-slate-900 transition">
+            <a
+              href="mailto:infofrontierstone@gmail.com"
+              className="bg-slate-900/90 border border-teal-900/60 p-4 rounded-2xl flex flex-col items-center justify-center gap-1 shadow-md hover:bg-slate-900 transition"
+            >
               <span className="text-xl">✉️</span>
               <span className="font-bold text-teal-400">Official Email</span>
               <span className="text-[12px] text-slate-400 truncate w-full">infofrontierstone@gmail.com</span>
             </a>
 
             <div className="bg-slate-900/90 border border-slate-800 p-4 rounded-2xl flex flex-col items-center justify-center gap-1 shadow-md">
-              <span className="text-xl">📍</span>
-              <span className="font-bold text-slate-200">Processing Yard</span>
-              <span className="text-[12px] text-slate-400">Hattar Industrial Estate, PK</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-5 h-5 text-teal-400 mb-0.5"
+                aria-hidden="true"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span className="font-bold text-teal-400">Processing Yard</span>
+              <span className="text-[11px] text-slate-400 leading-snug">
+                Industrial Estate Hattar, Haripur, Hazara Division, KPK
+              </span>
+              <div className="w-full border-t border-slate-800/90 pt-2 mt-1.5 flex flex-col items-center gap-0.5">
+                <span className="font-bold text-teal-400">Export Coordination Office</span>
+                <span className="text-[11px] text-slate-400">Gulberg Greens, Islamabad</span>
+              </div>
             </div>
           </div>
         </div>
