@@ -64,7 +64,7 @@ export default function HeroSlider() {
               <span className="bg-amber-500 text-slate-950 text-[9px] sm:text-[10px] font-black px-2 py-0.5 rounded uppercase tracking-wider mb-2 inline-block">
                 Direct Source / Abbottabad Hazara KPK 
               </span>
-              <h2 className="text-lg sm:text-2xl md:text-3xl font-black mb-1 text-slate-100">{slide.title}</h2>
+              <h2 className="text-lg sm:text-2xl md:text-3xl font-black mb-1 text-slate-300">{slide.title}</h2>
               <p className="text-slate-300 text-[11px] sm:text-xs md:text-sm font-medium">{slide.description}</p>
             </div>
           </div>

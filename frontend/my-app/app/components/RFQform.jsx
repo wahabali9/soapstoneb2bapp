@@ -58,7 +58,7 @@ export default function RFQForm() {
             <span className="bg-teal-950 border border-teal-800 text-teal-400 text-[10px] font-black px-2.5 py-1 rounded-md uppercase tracking-widest inline-block mb-2">
               B2B Inquiry Portal
             </span>
-            <h3 className="text-lg sm:text-xl font-black text-slate-100">Request a Custom Quote</h3>
+            <h3 className="text-lg sm:text-xl font-black text-slate-300">Request a Custom Quote</h3>
 
             <p className="text-slate-400 text-[11px] sm:text-xs leading-relaxed mt-2 max-w-lg mx-auto">
               Please submit your initial requirements using this form to connect directly with our export team for detailed discussions on mineral specs, lab reports, and FOB pricing.
@@ -68,7 +68,7 @@ export default function RFQForm() {
           {createdOrder && (
             <div className="mb-6 p-4 bg-teal-950/80 border border-teal-700 rounded-xl text-center">
               <p className="text-xs text-teal-300 font-bold">Inquiry Registered Successfully!</p>
-              <p className="text-sm font-mono text-white font-black mt-1">Tracking ID: {createdOrder.trackingId}</p>
+              <p className="text-sm font-mono text-slate-300 font-black mt-1">Tracking ID: {createdOrder.trackingId}</p>
             </div>
           )}
 
@@ -106,7 +106,7 @@ export default function RFQForm() {
               </div>
             </div>
 
-            <button type="submit" disabled={loading} className="w-full bg-teal-700 text-white py-3 rounded-xl font-bold text-sm hover:bg-teal-600 transition cursor-pointer disabled:opacity-50 mt-2">
+            <button type="submit" disabled={loading} className="w-full bg-teal-700 text-slate-200 py-3 rounded-xl font-bold text-sm hover:bg-teal-600 transition cursor-pointer disabled:opacity-50 mt-2">
               {loading ? "Submitting Inquiry..." : "Submit Quote Request"}
             </button>
           </form>
