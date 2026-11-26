@@ -233,7 +233,7 @@ export default function ProductShowroom() {
           />
         </div>
 
-        <p className="text-slate-400 text-xs sm:text-sm mt-3 max-w-2xl mx-auto leading-relaxed px-2">
+        <p className="text-slate-400 text-xs sm:text-xs mt-3 max-w-2xl mx-auto leading-relaxed px-2">
           Quarried and processed in the mineral-rich Hazara Division, KPK (Northern Pakistan). A metamorphic magnesium silicate rock (H
           <sub>2</sub>Mg<sub>3</sub>O<sub>12</sub>Si<sub>4</sub>) composed predominantly of talc with natural traces of magnesite, carbonate, mica, and quartz—certified 100% asbestos-free. Widely used across paints, cosmetics, pharmaceuticals, ceramics, and architectural countertops, floor tiles, facing stone, electrical panels, wood stoves, cooking slabs, ornamental carvings, and marking pencils.
         </p>
@@ -315,7 +315,7 @@ export default function ProductShowroom() {
           <h3 className="text-xl sm:text-3xl font-bold text-slate-300 tracking-tight">
             Why Frontier Stone
           </h3>
-          <p className="text-slate-400 text-xs sm:text-sm mt-2 max-w-2xl mx-auto leading-relaxed px-2">
+          <p className="text-slate-400 text-xs sm:text-xs mt-2 max-w-2xl mx-auto leading-relaxed px-2">
             Direct mine-to-port mineral supply built for international industrial buyers with consistent bulk quality and transparent export execution.
           </p>
         </div>
