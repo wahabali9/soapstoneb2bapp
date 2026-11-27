@@ -200,7 +200,7 @@ export default function ProductShowroom() {
         "100% Asbestos-Free massive crystalline soapstone chunks mined directly from Hazara quarries with zero impurities, ideal for architectural slabs, carving, and heavy industrial milling.",
       purityOrBrightness: "Purity: 96-98% | Asbestos-Free",
       imageUrl:
-        "https://images.unsplash.com/photo-1615800098774-e346b0883f3a?auto=format&fit=crop&q=80&w=800",
+        "",
     },
     {
       _id: "default-2",
@@ -209,7 +209,7 @@ export default function ProductShowroom() {
         "100% Asbestos-Free finely milled premium mesh talcum powder optimized as functional filler agents for high-grade paints, cosmetics, and pharmaceutical formulations.",
       purityOrBrightness: "Brightness: 95%+ | Mesh: 300 - 600",
       imageUrl:
-        "https://images.unsplash.com/photo-1584727638096-042c45049ebe?auto=format&fit=crop&q=80&w=800",
+        "",
     },
   ];
 
